@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,600&family=Sarala:wght@400;700&display=swap');
+
 body {
   display: flex;
   justify-content: center;
@@ -6,35 +8,41 @@ body {
   margin: 0;
   background-color: #f3f3f3;
   font-family: 'Arial', sans-serif;
+  background-image: url('/source/img/0ac5237568173c84a72874ad881c2371.jpg');
+  background-size: cover;
+  background-position: center;
 }
 #container {
   text-align: center;
   animation: fadeIn 2s;
 }
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+
 #proposal {
   margin-bottom: 20px;
   font-size: 2em;
   font-weight: bold;
-  color: #333;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   animation: dropIn 1s ease;
 }
-@keyframes dropIn {
-  0% {
-    transform: translateY(-100px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
+
+#message {
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  display: none;
+}
+
+#message p {
+  line-height: 1.5;
+  font-size: 1.2em;
+  font-family: 'Sarala', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  color: #fff;
 }
 .button {
   padding: 10px 20px;
@@ -49,6 +57,34 @@ body {
   position: relative;
   animation: popIn 0.5s ease;
 }
+
+#no {
+  transition: transform 0.5s ease;
+}
+#yes {
+  z-index: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes dropIn {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 @keyframes popIn {
   0% {
     transform: scale(0);
@@ -60,10 +96,3 @@ body {
     transform: scale(1);
   }
 }
-#no {
-  transition: transform 0.5s ease;
-}
-#yes {
-  z-index: 1;
-}
-
