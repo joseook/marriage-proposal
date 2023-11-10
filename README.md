@@ -1,7 +1,7 @@
 
 # Projeto Proposta de Casamento Interativa
 
-Este projeto é uma experiência interativa de proposta de casamento, criada para proporcionar um momento inesquecível e emocionante. Utilizando HTML, CSS e JavaScript, esta aplicação web convida o usuário a responder a grande pergunta: "Casa comigo?".
+Este projeto é uma experiência interativa de proposta de casamento, mas também pode ser usada para pedidos de namoros, criada para proporcionar um momento inesquecível e emocionante. Utilizando HTML, CSS e JavaScript, esta aplicação web convida o usuário a responder a grande pergunta: "Casa comigo?".
 
 ![Screenshot da Proposta de Casamento](/source/img/screeshot-proposal.png)
 
