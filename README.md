@@ -1,16 +1,13 @@
-Com base no exemplo de `readme.md` que você forneceu, aqui está um `readme.md` personalizado para o seu projeto de casamento interativo:
-
----
 
 # Projeto Proposta de Casamento Interativa
 
 Este projeto é uma experiência interativa de proposta de casamento, criada para proporcionar um momento inesquecível e emocionante. Utilizando HTML, CSS e JavaScript, esta aplicação web convida o usuário a responder a grande pergunta: "Casa comigo?".
 
-![Screenshot da Proposta de Casamento](./img/screenshot-proposal.png)
+![Screenshot da Proposta de Casamento](/source/img/screeshot-proposal.png)
 
 ## Demonstração
 
-- Confira uma demonstração ao vivo do projeto de Proposta de Casamento [aqui](./img/gif/marriage-proposal-demo.gif).
+- Confira uma demonstração ao vivo do projeto de Proposta de Casamento [aqui](/source/img/giphy.gif).
 
 ## Conteúdo
 
