@@ -6,27 +6,50 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #f3f3f3;
-  font-family: 'Arial', sans-serif;
-  background-image: url('/source/img/0ac5237568173c84a72874ad881c2371.jpg');
-  background-size: cover;
-  background-position: center;
+  background-color: #fff;
 }
+
+.bg-after-yes {
+  background-image: url('../img/0ac5237568173c84a72874ad881c2371.jpg') ;
+  background-size: cover;
+  background-position: top left;
+  position: relative;
+  width: 100%;
+}
+
+.text-white {
+  color: white !important;
+}
+
 #container {
   text-align: center;
   animation: fadeIn 2s;
+}
+
+#countdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 2rem;
+  color: #3a4756;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  animation: fadeIn 0.9s ease-in infinite alternate;
 }
 
 #proposal {
   margin-bottom: 20px;
   font-size: 2em;
   font-weight: bold;
-  color: white;
+  color: black;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
   animation: dropIn 1s ease;
+  display: none;
 }
 
 #message {
@@ -42,8 +65,19 @@ body {
   font-family: 'Sarala', sans-serif;
   font-style: italic;
   font-weight: 500;
-  color: #fff;
+  color: black;
 }
+
+.heart {
+    position: fixed;
+    bottom: -100px; /* Iniciar fora da tela */
+    background-color: transparent;
+    font-size: 2em;
+    user-select: none;
+    z-index: 9999; /* Garantir que esteja acima de outros elementos */
+    animation: floatUp linear forwards;
+  }
+
 .button {
   padding: 10px 20px;
   margin: 0 10px;
@@ -55,12 +89,14 @@ body {
   color: white;
   transition: transform 0.5s ease;
   position: relative;
-  animation: popIn 0.5s ease;
+  animation: popIn 0.5s ease, glow 1.5s infinite alternate;
+  display: none;
 }
 
 #no {
   transition: transform 0.5s ease;
 }
+
 #yes {
   z-index: 1;
 }
@@ -94,5 +130,41 @@ body {
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px #ff85a2;
+  }
+  100% {
+    box-shadow: 0 0 20px #ff85a2, 0 0 30px #ff85a2 inset;
+  }
+}
+
+@keyframes floatUp {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100vh);
+      opacity: 0;
+    }
+  }
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  h1 {
+    font-size: 4vw;
+  }
+  p {
+    font-size: 2vw;
+  }
+  button {
+    padding: 1rem 2rem;
+    font-size: 2vw;
   }
 }
